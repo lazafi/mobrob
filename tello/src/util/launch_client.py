@@ -140,9 +140,9 @@ if __name__ == '__main__':
         # Initializes a rospy node so that the SimpleActionClient can
         # publish and subscribe over ROS.
         rospy.init_node('launch_client_py')
-        #result = launch_client()
-        #print("Result:", ', ', result)
-        result = launch_client_2()
+        result = launch_client()
         print("Result:", ', ', result)
+        #result = launch_client_2()
+        #print("Result:", ', ', result)
     except rospy.ROSInterruptException:
         print("program interrupted before completion", file=sys.stderr)
